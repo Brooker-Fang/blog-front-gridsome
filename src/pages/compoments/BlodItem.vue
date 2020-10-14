@@ -1,5 +1,5 @@
 <template>
-  <g-link :to="'/Blogs/' + item.id">
+  <g-link v-if="item" :to="'/Blogs/' + item.id">
     <div class="wrap">
       <div class="title">{{ item.title }}</div>
       <div class="info">
@@ -7,7 +7,7 @@
       </div>
       <div class="tag-wrap">
         类型：<span class="tag" v-for="tag in item.tags" :key="tag.id">{{
-          tag.title
+          tag.title + tag.id
         }}</span>
       </div>
       <div class="three-line-ellipsis intro">
@@ -15,6 +15,9 @@
       </div>
     </div>
   </g-link>
+  <div v-else>
+    null
+  </div>
 </template>
 <script>
 export default {

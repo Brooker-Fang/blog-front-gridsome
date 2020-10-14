@@ -11,13 +11,6 @@ module.exports = {
   siteDescription: '喜剧之王的博客',
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'BlogPost',
-        path: './content/blog/**/*.md',
-      }
-    },
-    {
       use: '@gridsome/source-strapi',
       options: {
         apiURL: 'http://47.242.19.80:1337',

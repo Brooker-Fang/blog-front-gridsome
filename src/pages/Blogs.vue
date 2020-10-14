@@ -15,6 +15,9 @@ export default {
   data () {
     return {
     }
+  },
+  mounted() {
+    console.log('data===', this.$page.allStrapiPost.edges)
   }
 }
 </script>
