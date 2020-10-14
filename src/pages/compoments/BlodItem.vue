@@ -28,9 +28,6 @@ export default {
       required: true,
     },
   },
-  mounted() {
-    console.log(this.item)
-  },
 }
 </script>
 <style lang="scss" scoped>
