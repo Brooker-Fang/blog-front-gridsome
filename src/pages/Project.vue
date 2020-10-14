@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="wrap">
-      
+      project
     </div>
   </Layout>
 </template>

@@ -35,20 +35,20 @@
               <span slot="title">最新动态</span>
             </el-menu-item>
           </g-link>
-          <g-link class="nav__link" to="/Social">
-            <el-menu-item index="/Social">
+          <g-link class="nav__link" to="/social">
+            <el-menu-item index="/social">
               <i class="el-icon-user"></i>
               <span slot="title">社交圈</span>
             </el-menu-item>
           </g-link>
-          <g-link class="nav__link" to="/Blogs">
-            <el-menu-item index="/Blogs">
+          <g-link class="nav__link" to="/blogs">
+            <el-menu-item index="/blogs">
               <i class="el-icon-document"></i>
               <span slot="title">博客列表</span>
             </el-menu-item>
           </g-link>
-          <g-link class="nav__link" to="/Project">
-            <el-menu-item index="/Project">
+          <g-link class="nav__link" to="/project">
+            <el-menu-item index="/project">
               <i class="el-icon-share"></i>
               <span slot="title">开源项目</span>
             </el-menu-item>
@@ -63,8 +63,8 @@ export default {
   computed: {
     activeIndex() {
       let path = this.$route.path
-      if (path.indexOf("Blogs") !== -1) {
-        return "/Blogs"
+      if (path.indexOf("blogs") !== -1) {
+        return "/blogs"
       }
       return this.$route.path
     },
