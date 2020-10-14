@@ -29,7 +29,7 @@ module.exports = {
   templates: {
     StrapiPost: [
       {
-        path: '/Blogs/:id',
+        path: '/blogs/:id',
         component: './src/templates/Blog.vue'
       }
     ]

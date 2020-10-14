@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="wrap">
-      <g-link to="/Blogs" class="back"
+      <g-link to="/blogs" class="back"
         ><el-button type="text"
           ><i class="el-icon-arrow-left"></i>返回</el-button
         ></g-link

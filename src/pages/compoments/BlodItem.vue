@@ -1,5 +1,5 @@
 <template>
-  <g-link v-if="item" :to="'/Blogs/' + item.id">
+  <g-link v-if="item" :to="'/blogs/' + item.id">
     <div class="wrap">
       <div class="title">{{ item.title }}</div>
       <div class="info">
