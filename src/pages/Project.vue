@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="wrap">
-      <ProjectItem v-for="edge in $page.allStrapiProject.edges" :key="edge.node.id" :item="edge.node"></ProjectItem>
+      <ProjectItem v-bind="$attrs" v-for="edge in $page.allStrapiProject.edges" :key="edge.node.id" :item="edge.node"></ProjectItem>
     </div>
   </Layout>
 </template>
@@ -21,7 +21,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .wrap{
-  padding: 20px;
+  padding: 10px;
 }
 </style>
 <page-query>

@@ -20,8 +20,9 @@ export default {
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
+.blog-wrap{
+  background-color:rgba(255,255,255,0.5);
+  padding: 10px;
 }
 </style>
 <page-query>
