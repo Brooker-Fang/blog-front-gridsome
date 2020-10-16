@@ -32,9 +32,11 @@
     </span>
     <span class="right">
       <span v-if="protocol" class="tag protocol-tag">{{protocol}}</span>
-      <span class="tag" v-for="tag in item.tags" :key="tag.id">{{
-        tag.title + tag.id
-      }}</span>
+      <template v-if="tags && tags.length">
+        <span class="tag" v-for="tag in item.tags" :key="tag.id">{{
+          tag.title + tag.id
+        }}</span>
+      </template>
     </span>
   </div>
 </el-card>
